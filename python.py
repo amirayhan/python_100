@@ -26,6 +26,7 @@
 # Write your code below this line 👇
 # print('Hello' + input('what is your name?') + '?')
 
+
 ###########
 # name = input('What is your name?\n')
 # length = len(name)
@@ -38,11 +39,13 @@
 # print('a: ' + str(a))
 # print('b: ' + str(b))
 
-###########
+
+########### Band Name Generator
 # print('Welcome to the Band Name Generator.')
 # city = input('What city did you grow up in?\n')
 # pet = input('What is the name of your pet?\n')
 # print('Your band name could be ' + city + ' ' + pet)
+
 
 ###########
 # two_digit_number = input('Enter two digit number: ')
@@ -67,14 +70,26 @@
 
 
 ########### your life in weeks
-age = int(input('Enter your age in years: '))
+# age = int(input('Enter your age in years: '))
 
-life_in_days = age * 365.25
-your_life_in_weeks = life_in_days / 7
+# life_in_days = age * 365.25
+# your_life_in_weeks = life_in_days / 7
 
 
-total_life_in_weeks = int(90*52)
-weeks_remaining = total_life_in_weeks - your_life_in_weeks
+# total_life_in_weeks = int(90*52)
+# weeks_remaining = total_life_in_weeks - your_life_in_weeks
 
-print(f'Your total life sepnd in weeks: {round(your_life_in_weeks,1)}')
-print(f'Your total remaining life in weeks: {round(weeks_remaining,1)}')
+# print(f'Your total life sepnd in weeks: {round(your_life_in_weeks,1)}')
+# print(f'Your total remaining life in weeks: {round(weeks_remaining,1)}')
+
+
+########### Tip Calculator
+bill = float(input('What was the total bill?\n'))
+tips = float(input('How much tip would you like to give? 10, 12, or 15?\n'))
+total_people = int(input('How many people to split the bill?\n'))
+
+total_tips = round((bill / 100) * tips, 2)
+total_bill = round(bill+total_tips, 2)
+each_person_bill = round(total_bill / total_people, 2)
+
+print('Each person should pay: ', each_person_bill)
