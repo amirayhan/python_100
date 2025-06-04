@@ -114,17 +114,36 @@
 
 
 ########### if nested elif else statement
-print('Welcome to the rollercoaster!')
-height = int(input('Enter your height in cm: '))
+# print('Welcome to the rollercoaster!')
+# height = int(input('Enter your height in cm: '))
 
-if height >= 120:
-    print('You can ride the rollercoaster.')
-    age = int(input("Enter your age: "))
-    if age < 12:
-        print('Please pay $5')
-    elif age <= 18:
-        print('Please pay $7')
-    else:
-        print('Please pay $12')
+# if height >= 120:
+#     print('You can ride the rollercoaster.')
+#     age = int(input("Enter your age: "))
+#     if age < 12:
+#         print('Please pay $5')
+#     elif age <= 18:
+#         print('Please pay $7')
+#     else:
+#         print('Please pay $12')
+# else:
+#     print('You are not allow to ride.')
+
+
+
+
+########### BMI Calculator 2.0
+height = float(input())
+weight = int(input())
+
+bmi = weight / (height * height)
+if bmi < 18.5:
+  print(f"Your BMI is {bmi}, you are underweight.")
+elif bmi < 25:
+  print(f"Your BMI is {bmi}, you have a normal weight.")
+elif bmi < 30:
+  print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif bmi < 35:
+  print(f"Your BMI is {bmi}, you are obese.")
 else:
-    print('You are not allow to ride.')
+  print(f"Your BMI is {bmi}, you are clinically obese.")
