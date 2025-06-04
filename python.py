@@ -84,12 +84,30 @@
 
 
 ########### Tip Calculator
-bill = float(input('What was the total bill?\n'))
-tips = float(input('How much tip would you like to give? 10, 12, or 15?\n'))
-total_people = int(input('How many people to split the bill?\n'))
+# bill = float(input('What was the total bill?\n'))
+# tips = float(input('How much tip would you like to give? 10, 12, or 15?\n'))
+# total_people = int(input('How many people to split the bill?\n'))
 
-total_tips = round((bill / 100) * tips, 2)
-total_bill = round(bill+total_tips, 2)
-each_person_bill = round(total_bill / total_people, 2)
+# total_tips = round((bill / 100) * tips, 2)
+# total_bill = round(bill+total_tips, 2)
+# each_person_bill = round(total_bill / total_people, 2)
 
-print('Each person should pay: ', each_person_bill)
+# print('Each person should pay: ', each_person_bill)
+
+
+########### Rollercoaster
+# print('Welcome to the Rollercoaster')
+# height = int(input('What is your height in cm? '))
+
+# if height > 120:
+#     print('You can ride the rollercoaster!')
+# else:
+#     print('You can not ride the rollercoaster')
+
+
+########### Even or odd number check
+# number = int(input('Which number do you want ot check? '))
+# if number % 2 == 0:
+#     print('This number is Even Number.')
+# else:
+#     print('This number is Odd Number.')
