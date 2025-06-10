@@ -113,7 +113,7 @@
 #     print('This number is Odd Number.')
 
 
-########### if nested elif else statement
+########### rollercoaster ticket - if nested elif else statement
 # print('Welcome to the rollercoaster!')
 # height = int(input('Enter your height in cm: '))
 
@@ -150,16 +150,43 @@
 
 
 ########### Leap Year
-year = int(input('Write your carent year: '))
+# year = int(input('Write your carent year: '))
 
-if year % 4 == 0:
-  if year % 100 == 0:
-    if year % 400 == 0:
-      print('Leap Year')
-    else:
-      print('Not Leap Year')
+# if year % 4 == 0:
+#   if year % 100 == 0:
+#     if year % 400 == 0:
+#       print('Leap Year')
+#     else:
+#       print('Not Leap Year')
+#   else:
+#     print('Leap Year')
+# else:
+#   print('Not Leap Year')
+
+
+########### rollercoaster ticket 2.0
+print('Welcome to the Rollercoaster!')
+height = int(input('Enter your height in cm: '))
+bill = 0
+
+if height >= 120:
+  print('You can ride the rollercoaster.')
+  age = int(input('What is your age? '))
+  if age < 12:
+    bill = 5
+    print('Child tickets are $5')
+  elif age <=18:
+    bill = 7
+    print('Youth tickets are $7')
   else:
-    print('Leap Year')
+    bill = 12
+    print('Adult tickets are $12')
+    
+  wants_photo = input('Do you want a photo taken? Y or N. ')
+  if wants_photo == 'Y' or wants_photo == 'y':
+    bill += 3
+    print(f'\n\nYour final bill is:\n--------------------\nTickets price + Photo price($3) = ${bill}\n\n')
+  else:
+    print(f'Your final bill is: {bill}')
 else:
-  print('Not Leap Year')
-
+  print('You are not allow to ride')
