@@ -165,28 +165,58 @@
 
 
 ########### rollercoaster ticket 2.0
-print('Welcome to the Rollercoaster!')
-height = int(input('Enter your height in cm: '))
-bill = 0
+# print('Welcome to the Rollercoaster!')
+# height = int(input('Enter your height in cm: '))
+# bill = 0
 
-if height >= 120:
-  print('You can ride the rollercoaster.')
-  age = int(input('What is your age? '))
-  if age < 12:
-    bill = 5
-    print('Child tickets are $5')
-  elif age <=18:
-    bill = 7
-    print('Youth tickets are $7')
-  else:
-    bill = 12
-    print('Adult tickets are $12')
+# if height >= 120:
+#   print('You can ride the rollercoaster.')
+#   age = int(input('What is your age? '))
+#   if age < 12:
+#     bill = 5
+#     print('Child tickets are $5')
+#   elif age <=18:
+#     bill = 7
+#     print('Youth tickets are $7')
+#   else:
+#     bill = 12
+#     print('Adult tickets are $12')
     
-  wants_photo = input('Do you want a photo taken? Y or N. ')
-  if wants_photo == 'Y' or wants_photo == 'y':
-    bill += 3
-    print(f'\n\nYour final bill is:\n--------------------\nTickets price + Photo price($3) = ${bill}\n\n')
-  else:
-    print(f'Your final bill is: {bill}')
-else:
-  print('You are not allow to ride')
+#   wants_photo = input('Do you want a photo taken? Y or N. ')
+#   if wants_photo == 'Y' or wants_photo == 'y':
+#     bill += 3
+#     print(f'\n\nYour final bill is:\n--------------------\nTickets price + Photo price($3) = ${bill}\n\n')
+#   else:
+#     print(f'Your final bill is: {bill}')
+# else:
+#   print('You are not allow to ride')
+
+
+########### Pizza Order
+# print("Thank you for choosing Python Pizza Deliveries!")
+# size = input('Small pizza (S): $15\nMedium pizza (M): $20\nLarge pizza (L): $25\nWhat size pizza do you want? S, M, or L: ')
+# add_pepperoni = input('\npepperoni for small pizza  = $2\npepperoni for medium or large pizza = $3\nAdd pepperoni for small pizza (Y or N): ')
+# extra_cheese = input('\nExtra cheese = $1\nDo you want extra cheese? Y or N: ') 
+
+# bill = 0
+
+# if size == 'S':
+#   bill = 15
+#   if add_pepperoni == 'Y':
+#     bill += 2
+# elif size == 'M':
+#   bill = 20
+#   if add_pepperoni == "Y":
+#     bill += 3
+# elif size == 'L':
+#   bill = 25
+#   if add_pepperoni == "Y":
+#     bill += 3
+# else:
+#   print('Please enter valid input and try again. Thank you.')
+
+# if extra_cheese == 'Y':
+#   bill += 1
+#   print(f'Your final bill is: {bill}')
+# else:
+#     print(f'Your final bill is: {bill}')
