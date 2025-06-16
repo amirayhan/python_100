@@ -330,13 +330,22 @@
 
 
 ########### Banker Roulette
-import random
-names_string = input('Enter all person name. seperate by comma and space.')
+# import random
+# names_string = input('Enter all person name. seperate by comma and space.')
 
-names = names_string.split(", ")
+# names = names_string.split(", ")
 
-names_length = len(names)
+# names_length = len(names)
 
-random_names = random.randint(0,names_length-1)
+# random_names = random.randint(0,names_length-1)
 
-print(f"{names[random_names]} is going to buy the meal today!")
+# print(f"{names[random_names]} is going to buy the meal today!")
+
+
+########### Dirty Dozen
+fruits = ['Strawberries','Grapes','Peaches','Cherries','Nectarines','Pears', 'Apples']
+vegetables = ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']
+dirty_dozen =[]
+dirty_dozen.extend(fruits)
+dirty_dozen.extend(vegetables)
+print(dirty_dozen)
