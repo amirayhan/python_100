@@ -319,10 +319,24 @@
 
 
 ########### Heads or Tails Game
-import random
-random_side = random.randint(0,1)
+# import random
+# random_side = random.randint(0,1)
 
-if random_side == 1:
-    print('Heads')
-else:
-    print('Tails')
+# if random_side == 1:
+#     print('Heads')
+# else:
+#     print('Tails')
+
+
+
+########### Banker Roulette
+import random
+names_string = input('Enter all person name. seperate by comma and space.')
+
+names = names_string.split(", ")
+
+names_length = len(names)
+
+random_names = random.randint(0,names_length-1)
+
+print(f"{names[random_names]} is going to buy the meal today!")
