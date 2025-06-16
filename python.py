@@ -343,9 +343,28 @@
 
 
 ########### Dirty Dozen
-fruits = ['Strawberries','Grapes','Peaches','Cherries','Nectarines','Pears', 'Apples']
-vegetables = ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']
-dirty_dozen =[]
-dirty_dozen.extend(fruits)
-dirty_dozen.extend(vegetables)
-print(dirty_dozen)
+# fruits = ['Strawberries','Grapes','Peaches','Cherries','Nectarines','Pears', 'Apples']
+# vegetables = ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']
+# dirty_dozen =[]
+# dirty_dozen.extend(fruits)
+# dirty_dozen.extend(vegetables)
+# print(dirty_dozen)
+
+
+
+########### Treasure Map Game
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() 
+
+letter = position[0].lower()
+abc = ['a', 'b', 'c' ]
+letter_index = abc.index(letter)
+number_index = int(position[1])-1
+
+map[number_index][letter_index] ="X"
+
+print(f"{line1}\n{line2}\n{line3}")
