@@ -353,18 +353,92 @@
 
 
 ########### Treasure Map Game
-line1 = ["⬜️","️⬜️","️⬜️"]
-line2 = ["⬜️","⬜️","️⬜️"]
-line3 = ["⬜️️","⬜️️","⬜️️"]
-map = [line1, line2, line3]
-print("Hiding your treasure! X marks the spot.")
-position = input() 
+# line1 = ["⬜️","️⬜️","️⬜️"]
+# line2 = ["⬜️","⬜️","️⬜️"]
+# line3 = ["⬜️️","⬜️️","⬜️️"]
+# map = [line1, line2, line3]
+# print("Hiding your treasure! X marks the spot.")
+# position = input() 
 
-letter = position[0].lower()
-abc = ['a', 'b', 'c' ]
-letter_index = abc.index(letter)
-number_index = int(position[1])-1
+# letter = position[0].lower()
+# abc = ['a', 'b', 'c' ]
+# letter_index = abc.index(letter)
+# number_index = int(position[1])-1
 
-map[number_index][letter_index] ="X"
+# map[number_index][letter_index] ="X"
 
-print(f"{line1}\n{line2}\n{line3}")
+# print(f"{line1}\n{line2}\n{line3}")
+
+
+
+
+
+########### Rock, Paper, Scissor Game
+import random
+print('Welcome to new game!\n✊ 0-Rock   ✋ 1-Paper   ✌️  2-Scissors\n----------------------------------------')
+
+man_choose = int(input('What do you Choose?\n'))
+computer_choose = random.randint(0,2)
+
+if man_choose == 0:
+    print(r'''Your Choice:
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+          ''')
+elif man_choose == 1:
+    print(r'''Your Choice:
+    _______
+---'   ____)
+        (_____)
+        (_____)
+        (____)
+---.__(___)
+          ''')
+else:
+    print(r'''Your Choice:
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+          ''')
+
+if computer_choose == 0:
+    print(r'''Computer Choice:
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+          ''')
+elif computer_choose == 1:
+    print(r'''Computer Choice:
+    _______
+---'   ____)
+        (_____)
+        (_____)
+        (____)
+---.__(___)
+          ''')
+else:
+    print(r'''Computer Choice:
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+          ''')
+
+if man_choose == computer_choose:
+    print('🤝 Draw!')
+elif man_choose == 0 and computer_choose == 2 or man_choose == 1 and computer_choose == 0 or man_choose == 2 and computer_choose == 1:
+    print('✅ You Win!')
+else:
+    print('❌ You Lose!')
